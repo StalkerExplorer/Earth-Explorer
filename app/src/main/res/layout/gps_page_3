@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:test="http://schemas.android.com/apk/res/com.earth.explorer"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#202125">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Небосвод"
+			android:textColor="#FF5722"
+			android:shadowColor="#141414"
+			android:shadowRadius="2.0"
+			android:shadowDx="2.0"
+			android:shadowDy="2.0"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:padding="5dp"
+			android:textSize="20sp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="Показывать все видимые устройством спутники"
+			android:textColor="#696969"
+			android:shadowColor="#101010"
+			android:shadowRadius="2.0"
+			android:shadowDx="2.0"
+			android:shadowDy="2.0"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:textSize="9sp"
+			android:layout_weight="1.0"
+			android:id="@+id/skyTextView1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:layout_weight="0.8"
+		android:layout_margin="5dp">
+
+		<com.earth.explorer.GPS.View.SkyView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/skyView"
+			android:onClick="onclSky"
+			android:layout_marginLeft="10dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1.0">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left|center">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text=""
+				android:textColor="#424242"
+				android:shadowColor="#000000"
+				android:shadowDx="2.0"
+				android:shadowDy="2.0"
+				android:shadowRadius="2.0"
+				android:textSize="16sp"
+				android:gravity="center"
+				android:id="@+id/textViewCountSatSky"
+				android:visibility="invisible"/>
+
+			<ProgressBar
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="match_parent"
+				android:layout_height="10px"
+				android:layout_centerInParent="true"
+				android:indeterminate="true"
+				android:indeterminateBehavior="cycle"
+				android:indeterminateOnly="true"
+				android:indeterminateTint="#424242"
+				android:indeterminateTintMode="src_in"
+				android:visibility="invisible"
+				android:id="@+id/progressBar3"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textColor="#424242"
+				android:id="@+id/textViewSatelliteUsedSky"
+				android:textSize="10sp"
+				android:text=""
+				android:visibility="invisible"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_weight="1.0"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<com.earth.explorer.GPS.View.BarGraph
+				test:BasebandCn0DbHz="true"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/barGraphBasebandCn0DbHz"
+				android:layout_weight="1.0"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginBottom="2dp"/>
+
+			<com.earth.explorer.GPS.View.BarGraph
+				test:BasebandCn0DbHz="false"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/barGraphCn0DbHz"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginBottom="2dp"
+				android:layout_weight="1.0"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

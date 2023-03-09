@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#1f2126"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:padding="2dp"
+								android:text=""
+								android:textColor="#E64A19"
+								android:layout_weight="1.2"
+								android:gravity="center"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Верхний край солнца, пересечет горизонт:"
+								android:textColor="#FF4908"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:padding="2dp"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:onClick="onclTextView"
+								android:textSize="10sp"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Нижний край солнца, пересечет горизонт:"
+								android:textColor="#FF4908"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:padding="2dp"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:onClick="onclTextView"
+								android:textSize="10sp"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:padding="2dp"
+								android:text="Луна"
+								android:textColor="#FE5723"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:textSize="20sp"
+								android:textStyle="bold"
+								android:layout_marginLeft="7dp"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Восход:"
+								android:textColor="#FE5723"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:layout_weight="1.2"
+								android:gravity="right|center"
+								android:textStyle="bold"
+								android:textSize="12sp"
+								android:paddingRight="2dp"
+								android:lines="2"
+								android:maxLines="2"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Нет данных"
+								android:padding="2dp"
+								android:textColor="#2d84ff"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:id="@+id/textView_Sunrise_Top"
+								android:textIsSelectable="true"
+								android:textSize="12sp"
+								android:lines="2"
+								android:maxLines="2"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Нет данных"
+								android:padding="2dp"
+								android:textColor="#2d84ff"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:id="@+id/textView_Sunrise_Bottom"
+								android:textSize="12sp"
+								android:lines="2"
+								android:maxLines="2"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Нет данных"
+								android:padding="2dp"
+								android:textColor="#2d84ff"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:id="@+id/textView_Rise_Moon"
+								android:textSize="12sp"
+								android:lines="2"
+								android:maxLines="2"
+								android:layout_marginLeft="7dp"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Заход:"
+								android:textColor="#FE5723"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:layout_weight="1.2"
+								android:gravity="right|center"
+								android:textStyle="bold"
+								android:textSize="12sp"
+								android:paddingRight="2dp"
+								android:lines="2"
+								android:maxLines="2"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Нет данных"
+								android:padding="2dp"
+								android:textColor="#2d84ff"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:id="@+id/textView_Sunset_Top"
+								android:textSize="12sp"
+								android:maxLines="2"
+								android:lines="2"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Нет данных"
+								android:padding="2dp"
+								android:textColor="#2d84ff"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:id="@+id/textView_Sunset_Bottom"
+								android:textSize="12sp"
+								android:lines="2"
+								android:maxLines="2"/>
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:text="Нет данных"
+								android:padding="2dp"
+								android:textColor="#2d84ff"
+								android:shadowColor="#141414"
+								android:shadowRadius="2.0"
+								android:shadowDx="2.0"
+								android:shadowDy="2.0"
+								android:layout_weight="1.0"
+								android:gravity="center"
+								android:id="@+id/textView_SetMoon"
+								android:textSize="12sp"
+								android:lines="2"
+								android:maxLines="2"
+								android:layout_marginLeft="7dp"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#424242"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_gravity="top"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Сумерки"
+					android:textColor="#FE5723"
+					android:shadowColor="#141414"
+					android:shadowRadius="2.0"
+					android:shadowDx="2.0"
+					android:shadowDy="2.0"
+					android:textSize="16sp"
+					android:gravity="center"
+					android:textStyle="bold"
+					android:layout_marginTop="5dp"/>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="2dp"
+						android:text=""
+						android:textColor="#E64A19"
+						android:layout_weight="1.0"
+						android:gravity="center"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Утренние наступают:"
+						android:textColor="#FF4908"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:padding="2dp"
+						android:layout_weight="1.0"
+						android:layout_gravity="right|center_vertical"
+						android:gravity="center"
+						android:onClick="onclTextView"
+						android:textSize="10sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Вечерние наступают:"
+						android:textColor="#FF4908"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:padding="2dp"
+						android:layout_weight="1.0"
+						android:layout_gravity="right|center_vertical"
+						android:gravity="center"
+						android:onClick="onclTextView"
+						android:textSize="10sp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Гражданские:"
+						android:padding="2dp"
+						android:textColor="#FE5723"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textIsSelectable="true"
+						android:id="@+id/textViewTWILIGHTCIVILsunrise"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:id="@+id/textViewTWILIGHTCIVILsunset"
+						android:textSize="12sp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Морские:"
+						android:padding="2dp"
+						android:textColor="#FE5723"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textIsSelectable="true"
+						android:id="@+id/textViewTWILIGHTNAUTICALsunrise"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:id="@+id/textViewTWILIGHTNAUTICALsunset"
+						android:textSize="12sp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Астрономические:"
+						android:padding="2dp"
+						android:textColor="#FE5723"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textIsSelectable="true"
+						android:id="@+id/textViewTWILIGHTASTRONOMICALsunrise"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:id="@+id/textViewTWILIGHTASTRONOMICALsunset"
+						android:textSize="12sp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Золотой час:"
+						android:padding="2dp"
+						android:textColor="#FE5723"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textIsSelectable="true"
+						android:id="@+id/textViewTWILIGHTGOLDENHOURsunrise"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:id="@+id/textViewTWILIGHTGOLDENHOURsunset"
+						android:textSize="12sp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Синий час:"
+						android:padding="2dp"
+						android:textColor="#FE5723"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textIsSelectable="true"
+						android:id="@+id/textViewTWILIGHTBLUEHOURsunrise"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:id="@+id/textViewTWILIGHTBLUEHOURsunset"
+						android:textSize="12sp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Ночной час наступает:"
+						android:padding="2dp"
+						android:textColor="#FE5723"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="right|center"
+						android:textStyle="bold"
+						android:textSize="12sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textIsSelectable="true"
+						android:textSize="12sp"
+						android:id="@+id/textViewTWILIGHTNIGHTHOUR"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:gravity="center">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Время, когда солнце достигает своей наивысшей точки в течение следующих 24 часов:"
+						android:padding="2dp"
+						android:textColor="#FE5723"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="right|center"
+						android:textStyle="bold"
+						android:textSize="9sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.7"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textIsSelectable="true"
+						android:textSize="9sp"
+						android:id="@+id/textViewSunNOON"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Время, когда солнце достигает своей самой низкой точки в течение следующих 24 часов:"
+						android:padding="2dp"
+						android:textColor="#FE5723"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.0"
+						android:layout_gravity="center_vertical"
+						android:gravity="right|center"
+						android:textStyle="bold"
+						android:textSize="9sp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="Нет данных"
+						android:padding="2dp"
+						android:textColor="#2d84ff"
+						android:shadowColor="#141414"
+						android:shadowRadius="2.0"
+						android:shadowDx="2.0"
+						android:shadowDy="2.0"
+						android:layout_weight="1.7"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:textIsSelectable="true"
+						android:textSize="9sp"
+						android:id="@+id/textViewSunNADIR"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Высота видимого солнца:"
+							android:textColor="#FE5723"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="right|center"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:paddingRight="2dp"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Нет данных"
+							android:textColor="#2d84ff"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="left|center"
+							android:textIsSelectable="true"
+							android:textSize="10sp"
+							android:id="@+id/textViewAltitudeSun"
+							android:paddingLeft="2dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Истинная высота солнца:"
+							android:textColor="#FE5723"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="right|center"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:paddingRight="2dp"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Нет данных"
+							android:textColor="#2d84ff"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="left|center"
+							android:textIsSelectable="true"
+							android:textSize="10sp"
+							android:id="@+id/textViewTrueAltitudeSun"
+							android:paddingLeft="2dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Азимут солнца:"
+							android:textColor="#FE5723"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="right|center"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:paddingRight="2dp"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Нет данных"
+							android:textColor="#2d84ff"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="left|center"
+							android:textIsSelectable="true"
+							android:textSize="10sp"
+							android:id="@+id/textViewAzimuthSun"
+							android:paddingLeft="2dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Расстояние до солнца:"
+							android:textColor="#FE5723"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="right|center"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:paddingRight="2dp"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Нет данных"
+							android:textColor="#2d84ff"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="left|center"
+							android:textIsSelectable="true"
+							android:textSize="10sp"
+							android:id="@+id/textViewDistanceSun"
+							android:paddingLeft="2dp"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.5">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Высота луны:"
+							android:textColor="#FE5723"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="right|center"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:paddingRight="2dp"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Нет данных"
+							android:textColor="#2d84ff"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="left|center"
+							android:textIsSelectable="true"
+							android:textSize="10sp"
+							android:id="@+id/textViewAltitudeMoon"
+							android:paddingLeft="2dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Азимут луны:"
+							android:textColor="#FE5723"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="right|center"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:paddingRight="2dp"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Нет данных"
+							android:textColor="#2d84ff"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="left|center"
+							android:textIsSelectable="true"
+							android:textSize="10sp"
+							android:id="@+id/textViewAzimuthMoon"
+							android:paddingLeft="2dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Расстояние до луны:"
+							android:textColor="#FE5723"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="right|center"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:paddingRight="2dp"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Нет данных"
+							android:textColor="#2d84ff"
+							android:shadowColor="#141414"
+							android:shadowRadius="2.0"
+							android:shadowDx="2.0"
+							android:shadowDy="2.0"
+							android:layout_weight="1.0"
+							android:layout_gravity="center_vertical"
+							android:gravity="left|center"
+							android:textIsSelectable="true"
+							android:textSize="10sp"
+							android:id="@+id/textViewDistanceMoon"
+							android:paddingLeft="2dp"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+
